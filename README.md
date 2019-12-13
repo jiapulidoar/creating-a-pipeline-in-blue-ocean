@@ -2,9 +2,9 @@
 
 ## Integrantes: 
 
-Cristian Martínez Collazos
-Jimmy Alexander Pulido Arias
-Laura Vanessa Bohórquez Ramírez
+* Cristian Martínez Collazos
+* Jimmy Alexander Pulido Arias
+* Laura Vanessa Bohórquez Ramírez
 
 
 ## Prueba de instalación: 
