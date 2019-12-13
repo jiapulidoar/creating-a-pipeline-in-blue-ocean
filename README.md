@@ -8,9 +8,10 @@ Laura Vanessa Bohórquez Ramírez
 
 
 ## Prueba de instalación: 
+> En el repositorio puede encontrar el archivo **Jenkinsfile**
+
 
 ![alt text](prueba.png "Logo Title Text 1")
 
 
 
-> En el repositorio puede encontrar el archivo **Jenkinsfile**
