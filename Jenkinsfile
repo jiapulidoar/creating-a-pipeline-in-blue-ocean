@@ -14,12 +14,37 @@ pipeline {
     }
 
     stage('Test') {
-      environment {
-        Cl = 'true'
-      }
-      steps {
-        sh './jenkins/scripts/test.sh'
-        input 'input'
+      parallel {
+        stage('Test') {
+          environment {
+            Cl = 'true'
+          }
+          steps {
+            sh './jenkins/scripts/test.sh'
+            input 'input'
+          }
+        }
+
+        stage('Test 0 ') {
+          steps {
+            sh 'echo "Test 0"'
+          }
+        }
+
+        stage('Test 1') {
+          steps {
+            sh '''echo "Test 1"
+# ./jenkins/scripts/test.sh.'''
+          }
+        }
+
+        stage('Test 2') {
+          steps {
+            sh '''echo "Test2"
+# ./jenkins/scripts/test.sh.'''
+          }
+        }
+
       }
     }
 
